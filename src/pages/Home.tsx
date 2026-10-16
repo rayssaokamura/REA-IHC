@@ -9,7 +9,14 @@ export default function Home() {
   const { done } = useProgress();
   const concluidas = MODULES.filter((m) => done.includes(m.slug)).length;
   const proxima = MODULES.find((m) => !done.includes(m.slug)) ?? MODULES[0]!;
-  const cards = [
+  const cards: {
+    number: number;
+    slug: string;
+    title: string;
+    short: string;
+    available: boolean;
+    videoMin?: number;
+  }[] = [
     ...MODULES.map((m) => ({ ...m, available: true })),
     ...UPCOMING_MODULES.map((m) => ({ ...m, available: false })),
   ];
