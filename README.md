@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Interface Clara — Recurso Educacional Aberto (REA)
 
 Curso aberto de IHC, UI/UX e Acessibilidade Digital: 10 módulos com videoaula,
@@ -31,3 +32,6 @@ npm run build    # gera a pasta dist/ (pode publicar no GitHub Pages)
 - `src/styles.css`: visual. As cores ficam no topo, em `:root`.
 - **Paleta:** em `index.html`, troque `data-palette="lavanda"` por `"rosa"` ou `"salvia"`.
 - `src/components/Flower.tsx`: a flor da página inicial (usa as cores da paleta).
+=======
+
+>>>>>>> 18f21f758ae53f26b80c22a9f2d59a23b1297286
