@@ -9,10 +9,30 @@ export interface ModuleMedia {
 }
 
 export const MEDIA: Record<string, ModuleMedia> = {
+  "cores-e-contraste": {
+    materials: [
+      { label: "WCAG 2.2 — Recomendação do W3C", url: "https://www.w3.org/TR/WCAG22/" },
+      { label: "WebAIM Contrast Checker", url: "https://webaim.org/resources/contrastchecker/" },
+    ],
+  },
   "boa-interface": {
     materials: [
-      { label: "Heurísticas de Nielsen: o que são e como aprimoram interfaces", url: "https://www.softdesign.com.br/blog/heuristicas-de-nielsen/" },
+      { label: "10 Usability Heuristics — Nielsen Norman Group", url: "https://www.nngroup.com/articles/ten-usability-heuristics/" },
     ],
+  },
+  "botoes-e-feedback": {
+    materials: [
+      { label: "MDN — ARIA live regions", url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" },
+    ],
+  },
+  acessibilidade: {
+    materials: [
+      { label: "eMAG — Modelo de Acessibilidade em Governo Eletrônico", url: "https://emag.governoeletronico.gov.br/" },
+      { label: "W3C Web Accessibility Initiative", url: "https://www.w3.org/WAI/" },
+    ],
+  },
+  tipografia: {
+    materials: [{ label: "MDN — clamp()", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/clamp" }],
   },
 };
 

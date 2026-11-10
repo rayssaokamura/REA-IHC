@@ -4,16 +4,21 @@ import Home from "./pages/Home";
 import Lesson from "./pages/Lesson";
 import Project from "./pages/Project";
 
+function Logo() {
+  return <span>{COURSE.name}</span>;
+}
+
 export default function App() {
   return (
     <>
       <a href="#conteudo" className="skip">Pular para o conteúdo</a>
       <header className="header">
         <div className="container header-inner">
-          <Link to="/" className="logo">{COURSE.name}</Link>
+          <Link to="/" className="logo"><Logo /></Link>
           <nav aria-label="Principal">
             <NavLink to="/" end>Início</NavLink>
             <NavLink to="/projeto">Projeto prático</NavLink>
+            <NavLink to="/#equipe">Equipe</NavLink>
           </nav>
         </div>
       </header>

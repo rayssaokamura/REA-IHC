@@ -26,16 +26,24 @@ function Photo({ m }: { m: Member }) {
 
 export default function Team() {
   return (
-    <section className="section" aria-labelledby="equipe">
+    <section className="section team-section" id="equipe" aria-labelledby="titulo-equipe">
       <div className="container">
-        <h2 id="equipe">Quem faz o Interface Clara</h2>
-        <p className="lead">Pessoas que planejaram, gravaram e construíram este recurso para a comunidade.</p>
+        <p className="tag">POR TRÁS DO PROJETO</p>
+        <h2 id="titulo-equipe">Quem faz o Interface Clara</h2>
+        <p className="lead">Conheça as pessoas que planejaram e construíram este recurso para a comunidade.</p>
         <ul className="team">
-          {TEAM.map((m) => (
-            <li key={m.name}>
-              <Photo m={m} />
-              <strong>{m.name}</strong>
-              {m.role && <span>{m.role}</span>}
+          {TEAM.map((m, index) => (
+            <li key={m.name} className={`team-card team-card-${index + 1}`}>
+              <div className="team-photo-wrap">
+                <span className="team-index" aria-hidden="true">0{index + 1}</span>
+                <Photo m={m} />
+              </div>
+              <div className="team-card-info">
+                <span className="team-kicker">EQUIPE DO PROJETO</span>
+                <strong>{m.name}</strong>
+                {m.role && <span className="team-role">{m.role}</span>}
+                <span className="team-underline" aria-hidden="true" />
+              </div>
             </li>
           ))}
         </ul>
