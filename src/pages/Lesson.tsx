@@ -83,14 +83,6 @@ export default function Lesson() {
       {/* key reinicia a atividade ao trocar de aula */}
       <Activity key={m.slug} activity={m.activity} />
 
-      <h2>Transcrição</h2>
-      {media.transcript ? (
-        <details className="card">
-          <summary>Ler transcrição completa</summary>
-          <p style={{ whiteSpace: "pre-line" }}>{media.transcript}</p>
-        </details>
-      ) : <Pending />}
-
       <h2>Materiais complementares</h2>
       {media.materials?.length ? (
         <ul>
