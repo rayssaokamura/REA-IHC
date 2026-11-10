@@ -17,12 +17,12 @@ export const MEDIA: Record<string, ModuleMedia> = {
   },
   "boa-interface": {
     materials: [
-      { label: "10 Usability Heuristics — Nielsen Norman Group", url: "https://www.nngroup.com/articles/ten-usability-heuristics/" },
+      { label: "10 Heurísticas de Nielsen", url: "https://www.softdesign.com.br/blog/heuristicas-de-nielsen/" },
     ],
   },
   "botoes-e-feedback": {
     materials: [
-      { label: "MDN — ARIA live regions", url: "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions" },
+      { label: "MDN — ARIA", url: "https://developer.mozilla.org/pt-BR/docs/Web/Accessibility/ARIA?" },
     ],
   },
   acessibilidade: {
