@@ -34,7 +34,7 @@ export default function Home() {
               <Link to={`/aula/${proxima.slug}`} className="btn">
                 {concluidas > 0 ? "Continuar de onde parei" : "Começar a aprender"}
               </Link>
-              <a href="#modulos" className="btn btn-ghost">Ver os 10 módulos</a>
+             
             </div>
           </div>
 
